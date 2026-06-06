@@ -1,0 +1,13 @@
+{
+  "name": "demo",
+  "title": "演示模块",
+  "version": "1.0.0",
+  "description": "AI生成的演示插件",
+  "author": "码创软件开发工作室",
+  "menu": {
+    "title": "演示模块",
+    "icon": "CubeOutline",
+    "path": "/module/demo",
+    "sort": 100
+  }
+}

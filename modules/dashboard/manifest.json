@@ -1,0 +1,14 @@
+{
+  "name": "dashboard",
+  "title": "统计看板",
+  "version": "1.0.0",
+  "description": "提供带 ECharts 图表的用户增长趋势和订单统计看板",
+  "author": "码创软件开发工作室",
+  "depends": [],
+  "menu": {
+    "title": "统计看板",
+    "icon": "BarChartOutlined",
+    "path": "/dashboard",
+    "sort": 1
+  }
+}

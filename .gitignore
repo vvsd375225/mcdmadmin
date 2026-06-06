@@ -1,0 +1,45 @@
+# Dependencies
+/vendor
+/frontend/admin/node_modules
+/frontend/home/node_modules
+/frontend/h5/node_modules
+/frontend/miniapp/node_modules
+node_modules
+
+# Runtime
+/runtime/*
+!/runtime/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build (generated frontend assets kept in public/)
+/frontend/home/dist
+/frontend/admin/dist
+
+# Backup files
+*.bak
+
+# Logs
+*.log
+
+# Uploads (keep dir, ignore files)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Temp
+/tmp
+temp/
