@@ -121,7 +121,7 @@ class MemberAuth extends Base
     private function remoteLogin($account, $password)
     {
         try {
-            $ch = curl_init('http://127.0.0.1:8000/admin/member_api/login');
+            $ch = curl_init('https://www.mcdmadmin.cn/admin/member_api/login');
             curl_setopt_array($ch, [
                 CURLOPT_POST => true, CURLOPT_TIMEOUT => 5,
                 CURLOPT_POSTFIELDS => json_encode(['username'=>$account,'password'=>$password,'captcha'=>'']),

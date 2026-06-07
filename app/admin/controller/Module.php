@@ -265,7 +265,7 @@ class Module extends Base
         if (!$name) return $this->error('请指定模块名');
 
         // 从官网市场下载模块包
-        $marketUrl = 'http://127.0.0.1:8000/api/plugins/download/' . urlencode($name);
+        $marketUrl = 'https://www.mcdmadmin.cn/api/plugins/download/' . urlencode($name);
         $zipContent = @file_get_contents($marketUrl);
         if (!$zipContent) {
             // 下载失败不中断，记录购买信息即可

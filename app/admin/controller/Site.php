@@ -379,8 +379,8 @@ HTML;
     {
         $cfg = \think\facade\Db::name('config')->where('group', 'ai')->column('value', 'name');
         return [
-            'email'      => $cfg['ai_contact_email'] ?? 'support@mcsw.dev',
-            'wechat'     => $cfg['ai_contact_wechat'] ?? 'mcsw2025',
+            'email'      => $cfg['ai_contact_email'] ?? '2286369875@qq.com',
+            'wechat'     => $cfg['ai_contact_wechat'] ?? 'machuangRJKF',
             'qqgroup'    => $cfg['ai_contact_qqgroup'] ?? '123456789',
             'notice'     => $cfg['ai_contact_notice'] ?? '请联系客服获取激活码',
             'pay_notice' => $cfg['ai_contact_pay_notice'] ?? '',

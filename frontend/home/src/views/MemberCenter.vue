@@ -261,7 +261,7 @@ async function deleteOrder(id:number){ try{await api.delete('/admin/member_api/o
 async function goPay(row:any){
   if(!row.order_no||!row.amount) return message.warning('订单信息不全')
   const params=new URLSearchParams({order_no:row.order_no,amount:String(row.amount),subject:'McdmAdmin AI '+row.level_name,channel:'alipay',site:window.location.hostname,return_url:window.location.origin+'/member',product_type:'ai_tier',product_id:row.level_name})
-  window.location.href='http://127.0.0.1:8000/api/pay?'+params.toString()
+  window.location.href='https://www.mcdmadmin.cn/api/pay?'+params.toString()
 }
 const orderCols = [
   {title:'订单号',key:'order_no',width:180},{title:'套餐',key:'level_name',width:90},{title:'金额',key:'amount',width:70,render:(r:any)=>'¥'+r.amount},{title:'周期',key:'period',width:60},
@@ -338,7 +338,7 @@ async function confirmBuy(){ buying.value=true; try{
       return_url:window.location.origin+'/member',
       product_type:'ai_tier', product_id:buyLevel.value.tier_key,
     })
-    window.location.href='http://127.0.0.1:8000/api/pay?'+params.toString()
+    window.location.href='https://www.mcdmadmin.cn/api/pay?'+params.toString()
   }
 }catch(e:any){message.error(e?.response?.data?.msg||'失败')}
 buying.value=false }

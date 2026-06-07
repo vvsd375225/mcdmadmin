@@ -39,19 +39,19 @@ export default defineConfig({
     host: '0.0.0.0',
     proxy: {
       '/admin': {
-        target: 'http://127.0.0.1:8001',
+        target: 'https://www.mcdmadmin.cn',
         changeOrigin: true,
       },
       '/api': {
-        target: 'http://127.0.0.1:8001',
+        target: 'https://www.mcdmadmin.cn',
         changeOrigin: true,
       },
       '/market': {
-        target: 'http://127.0.0.1:8001',
+        target: 'https://www.mcdmadmin.cn',
         changeOrigin: true,
       },
       '/pay': {
-        target: 'http://127.0.0.1:8001',
+        target: 'https://www.mcdmadmin.cn',
         changeOrigin: true,
       },
     },

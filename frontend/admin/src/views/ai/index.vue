@@ -139,7 +139,7 @@
               <button class="remote-config-btn" @click="showMasterKey = true">▸ 远程配置</button>
             </div>
             <p class="dim mt-sm">购买后 License 自动激活，无需手动输入密钥</p>
-            <p class="dim">或联系客服：<span class="key">微信</span> mcsw2025 · <span class="key">邮箱</span> support@mcsw.dev</p>
+            <p class="dim">或联系客服：<span class="key">微信</span> machuangRJKF · <span class="key">邮箱</span> 2286369875@qq.com</p>
           </div>
         </div>
       </div>
@@ -210,7 +210,7 @@
               <div class="guide-title">▌ 第一步：获取 License</div>
               <p>联系<strong>「码创软件开发工作室」</strong>购买 License，支付完成后系统自动填入密钥、分配模型、开通额度。全程无需用户手动配置任何技术参数。</p>
               <p>当前为测试阶段，联系客服免费获取激活码：</p>
-              <p><span class="key">邮箱：</span>support@mcsw.dev · <span class="key">微信：</span>mcsw2025</p>
+              <p><span class="key">邮箱：</span>2286369875@qq.com · <span class="key">微信：</span>machuangRJKF</p>
             </div>
             <div class="guide-section">
               <div class="guide-title">▌ 第二步：激活</div>
@@ -678,7 +678,7 @@ async function buyTierNow(key: string, tier: any) {
     } else {
       const d = r.data||r
       const params = new URLSearchParams({ order_no:d.order_no, amount:String(tier.price||0), subject:'McdmAdmin AI '+tier.name, channel:buyPayChannel.value, site:window.location.hostname, return_url:window.location.origin+'/#/ai?m_token='+memberToken, product_type:'ai_tier', product_id:key })
-      window.location.href = 'https://www.machuangziyuan.cn/api/pay?'+params.toString()
+      window.location.href = 'https://www.mcdmadmin.cn/api/pay?'+params.toString()
     }
   } catch(e) { message.error('购买失败') }
   buyingTier.value = ''

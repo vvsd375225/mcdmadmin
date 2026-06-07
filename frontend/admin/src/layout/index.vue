@@ -62,7 +62,7 @@
             <template #icon><n-icon size="16"><PersonOutline /></n-icon></template>
             会员中心
           </n-button>
-          <n-button quaternary size="small" class="header-link-btn" tag="a" href="http://127.0.0.1:8000/admin/" target="_blank">
+          <n-button quaternary size="small" class="header-link-btn" tag="a" href="https://www.mcdmadmin.cn/admin/" target="_blank">
             <template #icon><n-icon size="16"><HomeOutline /></n-icon></template>
             码创官网
           </n-button>

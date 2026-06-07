@@ -638,7 +638,7 @@ class User extends Base { ... }
 
         // 远程拉取
         try {
-            $resp = @file_get_contents('http://127.0.0.1:8000/api/tiers', false, stream_context_create([
+            $resp = @file_get_contents('https://www.mcdmadmin.cn/api/tiers', false, stream_context_create([
                 'http' => ['timeout' => 5, 'ignore_errors' => true],
                 'ssl'  => ['verify_peer' => false, 'verify_peer_name' => false],
             ]));

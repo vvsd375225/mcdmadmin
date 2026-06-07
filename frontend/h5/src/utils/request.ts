@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const request = axios.create({ baseURL: 'http://127.0.0.1:8000', timeout: 10000 })
+const request = axios.create({ baseURL: 'https://www.mcdmadmin.cn', timeout: 10000 })
 request.interceptors.request.use(config => {
   const token = localStorage.getItem('token')
   if (token) config.headers.token = token

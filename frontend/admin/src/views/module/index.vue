@@ -310,7 +310,7 @@ import { RefreshOutline, SearchOutline, PersonOutline, CloudDownloadOutline, Har
 import { getModuleListApi, installModuleApi, uninstallModuleApi, scanAiscModulesApi, installFromAiscApi } from '@/api/module'
 import { savePaymentApi } from '@/api/payment'
 
-const MARKET_API = 'http://127.0.0.1:8000/api/plugins'
+const MARKET_API = 'https://www.mcdmadmin.cn/api/plugins'
 
 const message = useMessage()
 const dialog = useDialog()
@@ -496,7 +496,7 @@ async function handleBuy(p: any) {
       product_type: 'module',
       product_id: p.name,
     })
-    window.location.href = 'http://127.0.0.1:8000/api/pay?' + params.toString()
+    window.location.href = 'https://www.mcdmadmin.cn/api/pay?' + params.toString()
   } catch (e: any) {
     message.error(e?.response?.data?.msg || '创建订单失败')
   } finally {

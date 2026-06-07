@@ -6,7 +6,7 @@ info:
   contact:
     name: McdmAdmin Team
 servers:
-  - url: http://127.0.0.1:8000/api.php
+  - url: https://www.mcdmadmin.cn/api.php
     description: 本地开发环境
 
 paths:

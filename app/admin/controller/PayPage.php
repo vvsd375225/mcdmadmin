@@ -40,14 +40,14 @@ class PayPage extends Base
             if ($channel === 'alipay') {
                 $result = \app\common\service\PaymentService::alipayPagePay(
                     $order['order_no'], $order['amount'], $order['subject'],
-                    $returnUrl, 'http://127.0.0.1:8000/api/pay/notify/alipay'
+                    $returnUrl, 'https://www.mcdmadmin.cn/api/pay/notify/alipay'
                 );
                 $alipayUrl = $result['pay_url'];
                 $isRealPay = true;
             } elseif ($channel === 'wechat') {
                 $result = \app\common\service\PaymentService::wechatNativePay(
                     $order['order_no'], $order['amount'], $order['subject'],
-                    'http://127.0.0.1:8000/api/pay/notify/wechat'
+                    'https://www.mcdmadmin.cn/api/pay/notify/wechat'
                 );
                 $wechatQr = $result['qr_code'];
                 $isRealPay = true;

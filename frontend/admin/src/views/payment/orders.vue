@@ -62,7 +62,7 @@ function handlePay(order: any) {
     site: window.location.hostname,
     return_url: window.location.origin + '/admin#/payment/result',
   })
-  window.location.href = 'https://www.machuangziyuan.cn/api/pay?' + params.toString()
+  window.location.href = 'https://www.mcdmadmin.cn/api/pay?' + params.toString()
 }
 
 onMounted(fetchList)

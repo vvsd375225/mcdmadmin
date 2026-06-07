@@ -192,7 +192,7 @@ async function handlePay() {
       return_url: window.location.origin + '/admin#/payment/result',
       product_type: 'ai_tier', product_id: selectedTierKey.value,
     })
-    window.location.href = 'https://www.machuangziyuan.cn/api/pay?' + params.toString()
+    window.location.href = 'https://www.mcdmadmin.cn/api/pay?' + params.toString()
   } catch (e: any) {
     message.error(e?.response?.data?.msg || '创建订单失败')
   } finally {

@@ -7,7 +7,7 @@
         </div>
         <div class="top-btns">
           <n-button round @click="goTo('/member')">会员中心</n-button>
-          <n-button round @click="goTo('http://127.0.0.1:8000')">码创官网</n-button>
+          <n-button round @click="goTo('https://www.mcdmadmin.cn')">码创官网</n-button>
         </div>
       </div>
     </header>
@@ -55,9 +55,9 @@
         </n-grid>
         <div class="about-contact">
           <h3>联系我们</h3>
-          <p>📧 邮箱：support@mcsw.dev</p>
-          <p>💬 微信：mcsw2025</p>
-          <p>🌐 官网：https://www.machuangziyuan.cn</p>
+          <p>📧 邮箱：2286369875@qq.com</p>
+          <p>💬 微信：machuangRJKF</p>
+          <p>🌐 官网：https://www.mcdmadmin.cn</p>
         </div>
       </div>
     </section>

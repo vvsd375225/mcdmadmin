@@ -36,8 +36,8 @@ export default defineConfig({
   server: {
     port: 3002,
     proxy: {
-      '/api': { target: 'http://127.0.0.1:8000', changeOrigin: true },
-      '/admin': { target: 'http://127.0.0.1:8001', changeOrigin: true },
+      '/api': { target: 'https://www.mcdmadmin.cn', changeOrigin: true },
+      '/admin': { target: 'https://www.mcdmadmin.cn', changeOrigin: true },
     },
   },
 })
