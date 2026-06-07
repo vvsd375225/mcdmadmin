@@ -51,34 +51,15 @@ if (is_dir($filePath)) {
     }
 }
 
-// Serve admin SPA if built
-if (strpos($path, '/admin') === 0) {
-    if (is_file(__DIR__ . '/admin/index.html')) {
-        $_SERVER["SCRIPT_FILENAME"] = __DIR__ . '/index.php';
-        $_SERVER["SCRIPT_NAME"] = '/index.php';
-        $_SERVER["PHP_SELF"] = '/index.php';
-        $_SERVER["PATH_INFO"] = $path;
-        // API calls under /admin go to ThinkPHP
-        if (strpos($path, '/admin/api') === 0 || strpos($path, '/admin/member_api') === 0) {
-            require __DIR__ . "/index.php";
-            return true;
-        }
-        // Serve admin SPA index.html
-        header('Content-Type: text/html');
-        readfile(__DIR__ . '/admin/index.html');
-        return true;
-    }
-    // No admin SPA built, fall through to ThinkPHP
-    $_SERVER["SCRIPT_FILENAME"] = __DIR__ . '/index.php';
-    $_SERVER["SCRIPT_NAME"] = '/index.php';
-    $_SERVER["PHP_SELF"] = '/index.php';
-    $_SERVER["PATH_INFO"] = $path;
-    require __DIR__ . "/index.php";
+// Serve admin SPA if built (hash router, only exact /admin or /admin/ needs index.html)
+if (($path === '/admin' || $path === '/admin/') && is_file(__DIR__ . '/admin/index.html')) {
+    header('Content-Type: text/html');
+    readfile(__DIR__ . '/admin/index.html');
     return true;
 }
 
-// API paths go to ThinkPHP
-if (strpos($path, '/api') === 0) {
+// API and admin paths route to ThinkPHP
+if (strpos($path, '/admin') === 0 || strpos($path, '/api') === 0) {
     $_SERVER["SCRIPT_FILENAME"] = __DIR__ . '/index.php';
     $_SERVER["SCRIPT_NAME"] = '/index.php';
     $_SERVER["PHP_SELF"] = '/index.php';
