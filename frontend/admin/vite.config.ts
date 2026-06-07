@@ -7,9 +7,9 @@ import UnoCSS from 'unocss/vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/',
+  base: '/admin/',
   build: {
-    outDir: 'C:/Users/小张开发/Desktop/用户后台构建',
+    outDir: '../../public/admin',
     emptyOutDir: true,
   },
   plugins: [

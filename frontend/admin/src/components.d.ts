@@ -11,7 +11,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NAlert: typeof import('naive-ui')['NAlert']
     NAvatar: typeof import('naive-ui')['NAvatar']
     NBadge: typeof import('naive-ui')['NBadge']
