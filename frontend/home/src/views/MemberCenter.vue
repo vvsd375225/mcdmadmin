@@ -214,7 +214,7 @@ import axios from 'axios'
 const router = useRouter()
 const showLoginTip = ref(false)
 function checkLogin(fn: Function) { if (!user.value.id) { showLoginTip.value = true; return }; fn() }
-function goToAi(){ const t=localStorage.getItem('m_token'); if(!t) { showLoginTip.value=true; return }; localStorage.setItem('swift_member_token', t); window.open('http://127.0.0.1:3001/#/ai', '_blank') }
+function goToAi(){ const t=localStorage.getItem('m_token'); if(!t) { showLoginTip.value=true; return }; localStorage.setItem('swift_member_token', t); window.open('https://www.mcdmadmin.cn/admin/#/ai', '_blank') }
 function handleLogout(){ localStorage.removeItem('m_token'); user.value={}; router.push('/member') }
 const themeStore = useThemeStore()
 const api = axios.create({ baseURL: '' })

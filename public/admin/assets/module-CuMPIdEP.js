@@ -1,1 +1,0 @@
-import{t as e}from"./request-BZmH07Jh.js";function t(){return e.get(`/admin/module/index`)}function n(t){return e.post(`/admin/module/install`,{name:t})}function r(t){return e.post(`/admin/module/uninstall`,{name:t})}function i(){return e.get(`/admin/module/scanaisc`)}function a(t){return e.post(`/admin/module/installfromaisc`,{name:t})}export{r as a,i,a as n,n as r,t};

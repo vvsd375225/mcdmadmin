@@ -105,7 +105,7 @@ import { useMessage } from 'naive-ui'
 import { aiConfigApi, aiCreateOrderApi } from '@/api/ai'
 
 const memberMode = !!new URLSearchParams(window.location.hash.split('?')[1] || '').get('m_token')
-function goMemberLogin(){ window.location.href='http://127.0.0.1:3002/member' }
+function goMemberLogin(){ window.location.href='https://www.mcdmadmin.cn/member' }
 
 const message = useMessage()
 const activated = ref(false)

@@ -58,7 +58,7 @@
           </n-breadcrumb>
         </div>
         <div class="header-right">
-          <n-button quaternary size="small" class="header-link-btn" tag="a" href="http://127.0.0.1:3002/member" target="_blank">
+          <n-button quaternary size="small" class="header-link-btn" tag="a" href="https://www.mcdmadmin.cn/member" target="_blank">
             <template #icon><n-icon size="16"><PersonOutline /></n-icon></template>
             会员中心
           </n-button>

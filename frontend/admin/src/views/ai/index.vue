@@ -408,7 +408,7 @@
     <n-result status="error" title="你已违规，请联系管理员" :description="'封禁原因：'+(banInfo||'违规')">
       <template #footer>
         <n-button type="primary" @click="showBanModal=false">知道了</n-button>
-        <n-button @click="()=>{ localStorage.removeItem('token'); window.location.href='http://127.0.0.1:3002/member' }">返回会员中心</n-button>
+        <n-button @click="()=>{ localStorage.removeItem('token'); window.location.href='https://www.mcdmadmin.cn/member' }">返回会员中心</n-button>
       </template>
     </n-result>
   </n-modal>
@@ -639,7 +639,7 @@ async function doMemberRegister() {
   memberAuthLoading.value=false
 }
 
-function goMemberLogin(){ window.location.href='http://127.0.0.1:3002/member' }
+function goMemberLogin(){ window.location.href='https://www.mcdmadmin.cn/member' }
 function memberLogout(){ localStorage.removeItem('m_token'); window.location.reload() }
 const showBanModal = ref(false)
 function bannedSend() { if(isBanned.value) { showBanModal.value = true; return }; send() }
