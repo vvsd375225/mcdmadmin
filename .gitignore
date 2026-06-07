@@ -1,5 +1,4 @@
 # Dependencies
-/vendor
 /frontend/admin/node_modules
 /frontend/home/node_modules
 /frontend/h5/node_modules
